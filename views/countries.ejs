@@ -13,19 +13,19 @@
 <% for (let i = 0; i < result.length; i++){ %>
          <div class="card">
              <!-- Use the flagURL key to set the image url -->
-            <img src="<%= result.population %>" alt="USA flag">
+            <img src="<%= result[i].flagURL %>" alt="USA flag">
             <div class="info">
                <!-- Use the name key to set the h2 tag -->
-               <h2><%= result.name %></h2>
+               <h2><%= result[i].name %></h2>
 
               <!-- Use the population key to set the span tag -->
-               <p>🧑‍🤝‍🧑 Population: <span><%= result.population %><span></p>
+               <p>🧑‍🤝‍🧑 Population: <span><%= result[i].population %><span></p>
 
               <!-- Use the officialLanguage key to set the span tag -->
-               <p>🗣️ Language: <span><%= result.officialLanguage %></span></p>
+               <p>🗣️ Language: <span><%= result[i].officialLanguage %></span></p>
 
               <!-- Use the hasNuclearWeapons key to set the span tag -->
-               <p>☢️ Nuclear Weapons: <span><%= result.hasNuclearWeapons%></span></p>
+               <p>☢️ Nuclear Weapons: <span><%= result[i].hasNuclearWeapons%></span></p>
             </div>
          </div>
 <% } %>

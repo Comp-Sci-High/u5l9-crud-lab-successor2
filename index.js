@@ -48,7 +48,7 @@ app.get("/", async (req, res)=>{
 
 // Create a dynamic PATCH route handler for "/update/{name}" that modifies the population of the country specified in the path (3 points)
 // Test this route on post man
-app.patch("/country/updagit te/:name", async (req, res)=>{
+app.patch("/update/:name", async (req, res)=>{
   const response = await Country.findOneAndUpdate({
     country: req.params.country
   },{
